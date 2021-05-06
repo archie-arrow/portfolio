@@ -1,0 +1,55 @@
+@font-face {
+    font-family:'Open Sans';
+    src: url('../fonts/Open Sans Bold.eot');
+	src: url('../fonts/Open Sans Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Open Sans Bold.woff2') format('woff2'),
+		url('../fonts/Open Sans Bold.woff') format('woff'),
+		url('../fonts/Open Sans Bold.ttf') format('truetype'),
+		url('../fonts/Open Sans Bold.svg#Open Sans Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('../fonts/Open Sans Regular.eot');
+	src: url('../fonts/Open Sans Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Open Sans Regular.woff2') format('woff2'),
+		url('../fonts/Open Sans Regular.woff') format('woff'),
+		url('../fonts/Open Sans Regular.ttf') format('truetype'),
+		url('../fonts/Open Sans Regular.svg#Open Sans Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('../fonts/Open Sans SemiBold.eot');
+	src: url('../fonts/Open Sans SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Open Sans SemiBold.woff2') format('woff2'),
+		url('../fonts/Open Sans SemiBold.woff') format('woff'),
+		url('../fonts/Open Sans SemiBold.ttf') format('truetype'),
+		url('../fonts/Open Sans SemiBold.svg#Open Sans SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family:'Open Sans';
+    src: url('../fonts/Open Sans Light.eot');
+	src: url('../fonts/Open Sans Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Open Sans Light.woff2') format('woff2'),
+		url('../fonts/Open Sans Light.woff') format('woff'),
+		url('../fonts/Open Sans Light.ttf') format('truetype'),
+		url('../fonts/Open Sans Light.svg#Open Sans Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
