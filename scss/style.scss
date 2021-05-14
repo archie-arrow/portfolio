@@ -258,10 +258,6 @@ section {
         filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, var(--shadow))) saturate(0) brightness(2) contrast(1);
     }
 
-    &__photo:hover {
-        filter: drop-shadow(4px 6px 12px rgba(0, 0, 0, var(--shadow))) saturate(1) brightness(120%) contrast(1);
-    }
-
 }
 
 .section {
@@ -274,7 +270,7 @@ section {
         font-weight: 700;
 
         border-bottom: 3px solid var(--color);
-        margin: 60px 0 40px 0;
+        margin: 60px 0 60px 0;
     }
 
     &__header-num {
@@ -401,6 +397,177 @@ section {
 
     &__item-arrow {
         display: block;
+    }
+
+}
+
+.contacts {
+
+    background-color: var(--bg-2);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__form,
+    &__info {
+        max-width: 468px;
+        width: 100%;
+    }
+
+    &__name,
+    &__email {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid var(--color);
+        transition: all .3s;
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        width: 100%;
+
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--color);
+        outline: none;
+
+        &::placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(var(--color), 0.5);
+            text-transform: lowercase;
+        }
+
+        &:focus {
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, var(--shadow));
+            border: 1px solid var(--color);
+        }
+
+    }
+
+    &__textarea {
+        background-color: transparent;
+        border: 1px solid var(--color);
+        transition: all .3s;
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        width: 100%;
+
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--color);
+        outline: none;
+        resize: none;
+
+        &::placeholder {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(var(--color), 0.5);
+            text-transform: lowercase;
+        }
+
+        &:focus {
+            border-radius: 5px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, var(--shadow));
+            border: 1px solid var(--color);
+        }
+    }
+
+    &__submit {
+        display: block;
+        margin-left: auto;
+        padding-right: 60px;
+        position: relative;
+
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--color);
+        border: none;
+        background-color: transparent;
+
+        transform: translateX(0px);
+        transition: all .3s;
+
+        &::after {
+            content: url(../images/svg/arrow.svg);
+            filter: var(--img-filter);
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+
+    &__info {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: justify;
+    }
+
+    &__info-text {
+        margin-bottom: 95px;
+    }
+
+    &__social-title {
+        margin-bottom: 15px;
+    }
+
+    &__social-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__social-link {
+        text-decoration: none;
+    }
+
+    &__social-img {
+        filter: var(--img-filter);
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.footer {
+
+    background-color: #333333;
+    padding: 32px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .logo {
+        filter: invert(1) contrast(2);
+    }
+
+    &__copy {
+        font-weight: 300;
+        font-size: 16px;
+        color: #FEFEFE;
     }
 
 }
